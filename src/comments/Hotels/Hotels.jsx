@@ -24,7 +24,7 @@ const [showMoreInfo, setShowMoreInfo] = useState(false)
                                         <div>
                                             {
                                                 showMoreInfo
-                                                            ? <Subscription hotel={hotel}/>
+                                                            ? <Subscription hotel={hotel} showMoreInfo={setShowMoreInfo}/>
                                                             : ''
                                             }
                                             </div>
