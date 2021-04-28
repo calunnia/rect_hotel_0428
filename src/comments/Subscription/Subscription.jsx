@@ -13,8 +13,8 @@ const startPost = (hotel, email)=>{
     setLoading(true)
     setData([])
    
-   console.log('email=', email);
-   console.log('hotel=',hotel);
+  // console.log('email=', email);
+   //console.log('hotel=',hotel);
    
     fetch(`/api/hotels/subscribe`,{
        method:"POST",
