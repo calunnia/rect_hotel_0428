@@ -10,7 +10,7 @@ const [showMoreInfo, setShowMoreInfo] = useState(false)
     <div className="hotel">
       {hotel.name}
 
-      <div>
+      <div >
                 <button onClick={()=>(setShowMore(!showMore))}>
                 {showMore ? 'Show less'  : 'Show More'}
                 </button>
@@ -18,13 +18,13 @@ const [showMoreInfo, setShowMoreInfo] = useState(false)
                                
                                 {
                                     showMore
-                                            ? <div></div><button onClick={()=>(setShowMoreInfo(!showMoreInfo))}>Request More Info</button>
+                                            ? <div><button onClick={()=>(setShowMoreInfo(!showMoreInfo))}>Request More Info</button></div>
                                             : ''
                                 }
                                         <div>
                                             {
                                                 showMoreInfo
-                                                            ? <Subscription/>
+                                                            ? <Subscription hotel={hotel}/>
                                                             : ''
                                             }
                                             </div>
