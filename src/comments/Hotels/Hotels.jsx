@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import Subscription from '../Subscription/Subscription.jsx'
 
-function Hotels({ hotel, key }) {
+function Hotels({ hotel }) {
 
 const [showMore, setShowMore] = useState(false)
 const [showMoreInfo, setShowMoreInfo] = useState(false)

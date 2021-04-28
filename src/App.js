@@ -39,7 +39,7 @@ useEffect(() => {
       {
         data===null 
                     ? <p>Something happened</p>
-                    : data.map((hotel, i)=>( <Hotels hotel={hotel} key={i.toStirng + '-hotel'}/>))
+                    : data.map((hotel, i)=>( <Hotels hotel={hotel} key={i.toString() + '-hotel'}/>))
       }
     </div>
   )
